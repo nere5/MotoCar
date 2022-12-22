@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MotoCar</string>
+    <string name="nere5">by \n nere5</string>
+    <string name="descriptionImgLogoMotoCar">imgLogoMotoCar</string>
 </resources>
