@@ -3,6 +3,13 @@
     <string name="nere5">by \n nere5</string>
     <string name="descriptionImgLogoMotoCar">imgLogoMotoCar</string>
     <string name="btnRegistro">Registro</string>
-    <string name="btnIngreso">Inicio Sesión</string>
-    <string name="btnSalir">Salir</string>
+    <string name="btnInicioSesion">Inicio Sesión</string>
+    <string name="btnSalirInicio">Salir</string>
+    <string name="hintNombres">Nombres</string>
+    <string name="hintApellidos">Apellidos</string>
+    <string name="hintCorreo">Correo Electrónico</string>
+    <string name="hintClave">Clave</string>
+    <string name="hintConfClave">Confirmar Clave</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnSalirRegistro">Salir</string>
 </resources>
