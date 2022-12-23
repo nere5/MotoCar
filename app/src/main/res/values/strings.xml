@@ -12,4 +12,6 @@
     <string name="hintConfClave">Confirmar Clave</string>
     <string name="btnEnviar">Enviar</string>
     <string name="btnSalirRegistro">Salir</string>
+    <string name="btnEnviarInicioSesion">Enviar</string>
+    <string name="btnSalirInicioSesion">Salir</string>
 </resources>
