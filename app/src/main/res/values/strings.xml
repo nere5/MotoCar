@@ -14,4 +14,31 @@
     <string name="btnSalirRegistro">Salir</string>
     <string name="btnEnviarInicioSesion">Enviar</string>
     <string name="btnSalirInicioSesion">Salir</string>
+    <string name="btnRegVehiculos">Registrar Vehiculos</string>
+    <string name="btnRegDocumentos">Registrar Documentos</string>
+    <string name="btnRegGastos">Registrar Gastos</string>
+    <string name="btnEstadisticas">Estadisticas</string>
+    <string name="btnSalirMenu">Salir</string>
+    <string name="hintTipoVehiculo">Tipo Vehiculo</string>
+    <string name="hintMarca">Marca</string>
+    <string name="hintModelo">Modelo</string>
+    <string name="hintCilindraje">Cilindraje</string>
+    <string name="hintPlaca">Placa</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="btnSalirRegVehiculo">Salir</string>
+    <string name="hintPlacaDoc">Placa</string>
+    <string name="hintTipoDocumento">Tipo Documento</string>
+    <string name="hintNumDocumento">Numero Documento</string>
+    <string name="hintFechaInicial">FechaInicial</string>
+    <string name="hintFechaFinal">FechaFinal</string>
+    <string name="btnRegistrarDoc">Registrar</string>
+    <string name="btnSalirDoc">salir</string>
+    <string name="hintFechaGasto">Fecha</string>
+    <string name="hintPlacaGasto">Placa</string>
+    <string name="hintKilometrajeGasto">Kilometraje</string>
+    <string name="hintGasto">Gasto</string>
+    <string name="hintValorGasto">Valor</string>
+    <string name="btnRegGasto">Registrar</string>
+    <string name="btnSalirGasto">Salir</string>
+
 </resources>
