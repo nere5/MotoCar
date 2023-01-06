@@ -15,7 +15,13 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="MyStyle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="MyStyle" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimaryDark">@color/darkPrimaryColor</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+    </style>
+
+    <style name="MyStyle1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimaryDark">@color/darkPrimaryColor</item>
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorAccent">@color/accentColor</item>
