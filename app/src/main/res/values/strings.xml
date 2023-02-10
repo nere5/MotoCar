@@ -26,7 +26,7 @@
     <string name="hintCorreo">Correo Electrónico</string>
     <string name="hintClave">Clave</string>
     <string name="hintConfClave">Confirmar Clave</string>
-    <string name="btnEnviar">Enviar</string>
+    <string name="btnAceptar">Aceptar</string>
     <string name="btnSalirRegistro">Salir</string>
 
     <!-- strings inicioSesion activity-->
