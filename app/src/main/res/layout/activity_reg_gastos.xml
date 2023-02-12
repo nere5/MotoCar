@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="@dimen/margin50dp"
+    android:layout_marginRight="@dimen/margin50dp">
+
+    <EditText
+        android:id="@+id/edtFechaGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:autofillHints="Fecha"
+        android:hint="@string/hintFechaGasto"/>
+
+    <EditText
+        android:id="@+id/edtPlacaGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:autofillHints="Placa"
+        android:hint="@string/hintPlacaGasto" />
+
+    <EditText
+        android:id="@+id/edtKilometrajeGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text|number"
+        android:autofillHints="Kilometraje"
+        android:hint="@string/hintKilometrajeGasto"/>
+
+    <EditText
+        android:id="@+id/edtGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:autofillHints="Gasto"
+        android:hint="@string/hintGasto"/>
+
+    <EditText
+        android:id="@+id/edtValorGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text|number"
+        android:autofillHints="ValorGasto"
+        android:hint="@string/hintValorGasto"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnRegistrarDoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:layout_weight="1"
+            android:text="@string/btnRegistrarDoc"
+            app:cornerRadius="@dimen/cornerRadius20dp" />
+
+        <Button
+            android:id="@+id/btnSalirDoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:layout_weight="1"
+            android:text="@string/btnSalirDoc"
+            app:cornerRadius="@dimen/cornerRadius20dp" />
+    </TableRow>
+</LinearLayout>

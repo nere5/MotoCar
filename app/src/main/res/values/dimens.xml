@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageSplashHeight">450dp</dimen>
+    <dimen name="margin5dp">5dp</dimen>
+    <dimen name="margin10dp">10dp</dimen>
+    <dimen name="margin20dp">20dp</dimen>
+    <dimen name="margin50dp">50dp</dimen>
+    <dimen name="margin100dp">100dp</dimen>
+    <dimen name="cornerRadius20dp">20dp</dimen>
+</resources>

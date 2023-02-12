@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="@dimen/margin50dp"
+    android:layout_marginRight="@dimen/margin50dp">
+
+    <EditText
+        android:id="@+id/edtTipoVehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:autofillHints="TipoVehiculo"
+        android:hint="@string/hintTipoVehiculo"/>
+
+    <EditText
+        android:id="@+id/edtMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:autofillHints="Marca"
+        android:hint="@string/hintMarca" />
+
+    <EditText
+        android:id="@+id/edtModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:autofillHints="Modelo"
+        android:hint="@string/hintModelo"/>
+
+    <EditText
+        android:id="@+id/edtPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:autofillHints="Placa"
+        android:hint="@string/hintPlaca"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:layout_weight="1"
+            android:text="@string/btnRegistrar"
+            app:cornerRadius="@dimen/cornerRadius20dp" />
+
+        <Button
+            android:id="@+id/btnSalirRegVehiculo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:layout_weight="1"
+            android:text="@string/btnSalirRegVehiculo"
+            app:cornerRadius="@dimen/cornerRadius20dp" />
+    </TableRow>
+</LinearLayout>
