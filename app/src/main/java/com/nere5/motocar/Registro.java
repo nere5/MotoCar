@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -56,16 +58,42 @@ public class Registro extends AppCompatActivity {
     }
 
     private void validar() {
-
-        if (clave.equals(confClave)) {
-            Toast.makeText(this, "Registro de usuario exitoso", Toast.LENGTH_LONG).show();
-            registrar();
+        ConexionDb conexion = new ConexionDb(this, ConstantesDb.DBNAME, null, 1);
+        SQLiteDatabase db = conexion.getReadableDatabase();
+        String[] parametros = {campoCorreo.getText().toString()};
+        String[] campos = {ConstantesDb.USUARIOS_CORREO};
+        if (nombres.equals("") | apellidos.equals("") | correo.equals("") | clave.equals("")
+                | confClave.equals("")) {
+            Toast.makeText(this, "Llene los campos vacios", Toast.LENGTH_LONG).show();
         } else {
-            campoClave.setText("");
-            campoConfClave.setText("");
-            campoClave.requestFocus();
-            Toast.makeText(this, "Las claves no coinciden. \n Ingréselas nuevamente",
-                    Toast.LENGTH_LONG).show();
+            Cursor cursor = db.query(ConstantesDb.TBL_NAME_USUARIOS, campos,
+                    ConstantesDb.USUARIOS_CORREO + " =?", parametros, null, null,
+                    null);
+            cursor.moveToFirst();
+            try {
+                if (cursor.getString(0).equals(correo)) {
+                    campoNombres.setText("");
+                    campoApellidos.setText("");
+                    campoCorreo.setText("");
+                    campoClave.setText("");
+                    campoConfClave.setText("");
+                    Toast.makeText(this, "El usuario ya existe\nIngrese los datos nuevamente",
+                            Toast.LENGTH_LONG).show();
+                }
+            } catch (Exception e) {
+                cursor.close();
+                if (clave.equals(confClave)) {
+                    Toast.makeText(this, "Registro de usuario exitoso", Toast.LENGTH_LONG).show();
+                    registrar();
+                } else {
+                    campoClave.setText("");
+                    campoConfClave.setText("");
+                    campoClave.requestFocus();
+                    Toast.makeText(this, "Las claves no coinciden\nIngréselas nuevamente",
+                            Toast.LENGTH_LONG).show();
+                }
+            }
+            cursor.close();
         }
     }
 

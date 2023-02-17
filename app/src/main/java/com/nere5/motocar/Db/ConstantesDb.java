@@ -15,4 +15,5 @@ public class ConstantesDb {
             " text not null, " + ConstantesDb.USUARIOS_APELLIDOS + " text not null, " +
             ConstantesDb.USUARIOS_CORREO + " text not null, " + ConstantesDb.USUARIOS_CLAVE +
             " text not null)";
+
 }
