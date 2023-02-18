@@ -6,5 +6,7 @@
     <dimen name="margin20dp">20dp</dimen>
     <dimen name="margin50dp">50dp</dimen>
     <dimen name="margin100dp">100dp</dimen>
+    <dimen name="margin150dp">150dp</dimen>
+    <dimen name="margin200dp">200dp</dimen>
     <dimen name="cornerRadius20dp">20dp</dimen>
 </resources>

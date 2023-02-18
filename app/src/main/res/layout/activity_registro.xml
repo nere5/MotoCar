@@ -1,82 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_marginTop="100dp"
-    android:layout_marginLeft="@dimen/margin50dp"
-    android:layout_marginRight="@dimen/margin50dp">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-
-    <EditText
-        android:id="@+id/edtNombres"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:autofillHints="Nombres"
-        android:hint="@string/hintNombres" />
+        android:layout_marginTop="@dimen/margin100dp"
+        android:layout_marginLeft="@dimen/margin50dp"
+        android:layout_marginRight="@dimen/margin50dp"
+        app:cardCornerRadius="@dimen/cornerRadius20dp"
+        app:cardElevation="@dimen/cardview_default_elevation">
 
-    <EditText
-        android:id="@+id/edtApellidos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:autofillHints="Apellidos"
-        android:hint="@string/hintApellidos" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edtCorreo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:autofillHints="Correo"
-        android:hint="@string/hintCorreo"/>
+            <EditText
+                android:id="@+id/edtNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Nombres"
+                android:ems="10"
+                android:hint="@string/hintNombres"
+                android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/edtClave"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:autofillHints="Clave"
-        android:hint="@string/hintClave"/>
+            <EditText
+                android:id="@+id/edtApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Apellidos"
+                android:ems="10"
+                android:hint="@string/hintApellidos"
+                android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/edtConfClave"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:autofillHints="Confirmar Clave"
-        android:hint="@string/hintConfClave"/>
+            <EditText
+                android:id="@+id/edtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Correo"
+                android:ems="10"
+                android:hint="@string/hintCorreo"
+                android:inputType="textEmailAddress" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtClave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Clave"
+                android:ems="10"
+                android:hint="@string/hintClave"
+                android:inputType="textPassword" />
 
-        <Button
-            android:id="@+id/btnAceptar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin20dp"
-            android:layout_weight="1"
-            android:text="@string/btnAceptar"
-            app:cornerRadius="@dimen/cornerRadius20dp"
-            android:onClick="onClick"/>
+            <EditText
+                android:id="@+id/edtConfClave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Confirmar Clave"
+                android:ems="10"
+                android:hint="@string/hintConfClave"
+                android:inputType="textPassword" />
 
-        <Button
-            android:id="@+id/btnSalirRegistro"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin20dp"
-            android:layout_weight="1"
-            android:text="@string/btnSalirRegistro"
-            app:cornerRadius="@dimen/cornerRadius20dp"
-            android:onClick="onClick"/>
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnAceptar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="@string/btnAceptar"
+                    app:cornerRadius="@dimen/cornerRadius20dp" />
+
+                <Button
+                    android:id="@+id/btnSalirRegistro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="@string/btnSalirRegistro"
+                    app:cornerRadius="@dimen/cornerRadius20dp" />
+            </TableRow>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>
