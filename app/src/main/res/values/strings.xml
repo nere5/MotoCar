@@ -5,7 +5,7 @@
     <!-- strings title activities -->
     <string name="titleInicio">Inicio</string>
     <string name="titleRegistro">Registro</string>
-    <string name="titleInicioSesion">inicio de sesion</string>
+    <string name="titleInicioSesion">Inicio de sesion</string>
     <string name="titleMenu">Menu</string>
     <string name="titleRegVehiculos">Registro de vehiculos</string>
     <string name="titleRegDocumentos">Registro de documentos</string>

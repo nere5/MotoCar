@@ -43,6 +43,7 @@
                 android:layout_margin="@dimen/margin20dp"
                 android:text="@string/btnSalirInicio"
                 app:cornerRadius="@dimen/cornerRadius20dp" />
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

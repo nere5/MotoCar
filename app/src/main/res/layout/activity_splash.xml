@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -8,21 +8,10 @@
     <ImageView
         android:id="@+id/imgLogoMotoCar"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/imageSplashHeight"
-        android:layout_margin="@dimen/margin20dp"
-        android:src="@drawable/logomotocar"
-        android:contentDescription="@string/descriptionImgLogoMotoCar">
-    </ImageView>
-
-    <Button
-        android:id="@+id/btnNere5"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nere5"
-        android:layout_gravity="center"
-        android:textAllCaps="false"
-        android:textStyle="bold">
-    </Button>
-
-</LinearLayout>
+        android:layout_margin="@dimen/margin50dp"
+        android:contentDescription="@string/descriptionImgLogoMotoCar"
+        android:src="@drawable/logomotocarsello">
+    </ImageView>
+    </LinearLayout>
 

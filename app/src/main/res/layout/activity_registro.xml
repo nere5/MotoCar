@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical" >
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         android:layout_marginLeft="@dimen/margin50dp"
         android:layout_marginRight="@dimen/margin50dp"
         app:cardCornerRadius="@dimen/cornerRadius20dp"
-        app:cardElevation="@dimen/cardview_default_elevation">
+        app:cardElevation="@dimen/cardview_default_elevation" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,7 +26,8 @@
                 android:autofillHints="Nombres"
                 android:ems="10"
                 android:hint="@string/hintNombres"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:shadowColor="@color/black"/>
 
             <EditText
                 android:id="@+id/edtApellidos"
